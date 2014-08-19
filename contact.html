@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>contact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			name: $('#name').val(),
+			email: $('#email').val(),
+			company: $('#company').val(),
+			subject: $('#subject').val(),
+			message: $('#message').val()
+		},
+			function(data){
+				$('#contactform #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactform').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactform').slideUp();
+			}
+		); 
+		return false;
+	});
+});
+// ]]>
+</script>
+<style type="text/css">
+<!--
+#cu3er-container { width:960px; outline:0; }
+-->
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="blok_header">
+    <div class="header">
+      <div class="logo"><a href="index.html"><img src="images/logo.gif" width="226" height="154" border="0" alt="logo" /></a></div>
+      <div class="search">
+        <form id="form1" name="form1" method="post" action="">
+          <label><span>
+            <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
+            </span>
+            <input name="b" type="image" src="images/search.gif" class="button" />
+          </label>
+        </form>
+      </div>
+      <div class="clr"></div>
+      <div class="menu_resize">
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html" class="active">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+  <div class="body_resize">
+    <div class="body">
+      <div class="body_big">
+        <h2>Contact Information.<br />
+          <span>Praesent laoreet ornare odioi porta aeanen leo justo varius</span></h2>
+        <p> Ras vitae enim nulla. Aenean tristique eros in mauris porta id suscipit libero scelerisque. Sollicitudin vel sollicitudin qui facilisis non massaNam id jus nisl ullamcorper laoreet nec ut diam. <br />
+          Nam eget nisi dui, vita hendrerit risus. Nunc non mas neque, at rhoncus nulla.Vivamus in metus nisi, ut gravida dolor. Pellentesque fermentum aliquam interdum. Mauris ligula dui, gravida nec tempus mollis, tempor at odio. Ut porttitor, orci sagittis pretium varius, felis sapien pharetra eros, quis fermentum dui ligula eget justo. </p>
+        <div class="bg"></div>
+        <form action="contact.php" method="post" id="contactform">
+          <ol>
+            <li>
+              <label for="name">First Name <span class="red">*</span></label>
+              <input id="name" name="name" class="text" />
+            </li>
+            <li>
+              <label for="email">Your email <span class="red">*</span></label>
+              <input id="email" name="email" class="text" />
+            </li>
+            <li>
+              <label for="company">Company</label>
+              <input id="company" name="company" class="text" />
+            </li>
+            <li>
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" class="text" />
+            </li>
+            <li>
+              <label for="message">Message <span class="red">*</span></label>
+              <textarea id="message" name="message" rows="6" cols="50"></textarea>
+            </li>
+            <li class="buttons">
+              <input type="image" name="imageField" id="imageField" src="images/send.gif" />
+            </li>
+          </ol>
+        </form>
+      </div>
+      <div class="body_small">
+        <h2>Address<br />
+          <span> Lorem Ipsum as their default model text</span></h2>
+        <p>Phone:  (800) 222-2222<br />
+          Fax: (800) 333-3333</p>
+        <div class="bg"></div>
+        <p>Address: Minimalism Centre,<br />
+          Wide road avenue<br />
+          21 344 Red Block complex.</p>
+        <div class="bg"></div>
+        <p><strong>More Information</strong><br />
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <img src="images/cont_1.jpg" alt="picture" /> </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer_resize"><a href="#"><img src="images/footer_logo.gif" alt="picture" width="227" height="84" border="0" /></a>
+    <p class="leftt">© Copyright YourSiteName. All Rights Reserved<br />
+      Home | Contact | RSS (DT) <a href="http://www.dreamtemplate.com">Website Templates</a></p>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+</div>
+</body>
+</html>
