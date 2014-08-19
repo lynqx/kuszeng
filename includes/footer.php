@@ -10,10 +10,7 @@
       <div class="row">
         <div class="span4">
           <h4>Stay Connected</h4>
-          <p> Lagos<br />
-            Nigeria <br />
-            <br />
-            Phone: +234 (0) 803 961 5025 <br />
+          <p>Phone: +234 (0) 803 961 5025 <br />
             kuszeng&#64;yahoo.com <br />
           </p>
           <br />
@@ -35,7 +32,6 @@
             <a class="soc3" href="http://www.facebook.com/kuszengwork"></a> <a class="soc1" href="#"></a> <a class="soc8" href="#"></a>           
           </div>
           
-          <div class="clr"></div>
         </div>
         
       </div>
@@ -46,11 +42,13 @@
 <!-- #footer --> 
 
 <!-- Gallery Starts --> 
-
+<script type="text/javascript" src="js/gallery-masonry/jquery.masonry.min.js"></script> 
+<script type="text/javascript" src="js/gallery-masonry/modernizr-transitions.js"></script> 
+<script type="text/javascript" src="js/gallery-masonry/gallery-masonry.js"></script> 
 
 
 <!-- Gallery Ends -->
-<?php if ($page == 'about' || $page == 'contact' ) { echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>'; } ?> 
+<?php if ($page == 'about' || $page == 'contact' || $page == 'portfolio' ) { echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>'; } ?> 
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script> 
 <script type="text/javascript">
 function mycarousel_initCallback(carousel)
