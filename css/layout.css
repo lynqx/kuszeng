@@ -1,0 +1,231 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		
+		.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container, .now_page, .now_page .container, .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container, .content_resize, .team .container, .say .container { width: 748px; }
+		.navbar-fixed-top .navbar-inner { padding-left: 0px; padding-right: 0px; } 
+		
+		#myCarousel .carousel-caption { margin-left: -325px; width: 650px; top: 50px; }
+		.carousel-control.left { left: 10px; } 
+		.carousel-control.right { right: 10px; }
+		#myCarousel .carousel-caption .caption-block { font-size: 15px; line-height: 22px; width: 400px; } 
+		#myCarousel .carousel-caption .caption-block br { display: none; }
+		#myCarousel .carousel-caption h4 { font-size: 30px; line-height: 36px; }
+		.button { margin-left: 135px; }
+		.now_page h4 { font-size: 28px; }
+		
+		.bricks .block { margin-left: 0px; width: 246px; } 
+		.bricks .block .col2, .bricks .block .col1, .bricks .block .col3 { width: 100%; }
+		.bricks .block:first-child { margin-left: 0px; }
+		.team .container { height: auto; }
+		.say_faces { margin-left: 0px; text-align: center; }
+		.say_faces a { display: inline-block; text-align: center; } 
+		#footer .span4 { width: 236px; } 
+		#footer input, textarea, .uneditable-input { width: 138px; } 
+		.team_body img { width: 123px; height: 123px; } 
+		
+		#myCarousel { height: 350px; }
+		#myCarousel img { height: 350px; }
+		.copyright { margin-top: 0px; } 
+		.social { margin-top: 10px; }
+		
+		.content_page .span4.gap11 { width: 250px; }
+		.span6 { width: 362px; }  
+		.span8 { width: 520px; }
+		.content_page .span4 { width: 200px; }  
+		#contactform_main textarea { width: 300px; }
+		.maps_view { height: 300px; }
+		.content_page .span4.gap12 { width: 236px; }
+		
+		.span3.gap15 { width: 171px; }
+		.span3.gap15 h3 { font-size: 12px; }
+		
+		.sliderwrap { width: 748px; }
+		#slider-wrapper object { height: 318px; }
+		
+		/* Typography */
+		#navbar .navbar-inner { padding-right: 0px; padding-left: 0px; }
+		.navbar .nav > li > a { padding: 13px 11px 10px; }
+		#forms .offset1 { margin-left: 20px; }
+		.span10 { width: 748px; }  
+		.span12 { width: 748px; } 
+		.label, .badge { margin-bottom: 4px; } 
+		
+	}
+	
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+				
+		.navbar-fixed-top .navbar-inner { padding-left: 0px; padding-right: 0px; }		 
+		.navbar .brand { padding: 0px 0 0px; margin: 30px auto 20px; float: none; text-align: center; } 
+		.menu ul.l_tinynav1 { display: none; } 
+		.menu .tinynav { padding: 5px 0; width: 100%; display: block; } 
+		#header .menu { padding-bottom: 10px; float: none; width: 100%; } 
+		.navbar { position: relative; height: auto; }
+		.bricks .block { margin: 0px 0 15px 0; width: 100%; float: none; overflow: hidden; } 
+		.bricks .block .col2, .bricks .block .col1, .bricks .block .col3 { width: 100%; }
+		.bricks .block:first-child { margin-left: 0px; }
+		.now_page .container { padding-bottom: 30px; height: auto; }
+		.bricks { padding: 30px 0; } 
+		.team .container { height: auto; }
+		.team .container h1 { font-size: 18px; } 
+		.team .team_head { padding-bottom: 20px; } 
+		.team .team_head a { margin-top: 10px; }
+		
+		.span3.gap15 { margin: 0 1%; width: 48%; float: left; min-height: 320px; }
+		.say_faces { margin-left: 0px; text-align: center; } 
+		.say_faces a { display: inline-block; text-align: center; }
+		.cols h4 { margin-top: 30px; } 
+		
+		#footer, .cols { height: auto; }
+		.social { margin-top: 30px; float: none; }
+		.cols .lastcol { margin-left: 0px; }
+		.copyright { height: auto; margin-top: 0px; }
+		#footer .span4 { margin: 0px; width: 100%; float: none; overflow: hidden; } 
+		[class*="span"] { margin: 0px; } 
+		.row { margin: auto; }
+		
+		.carousel-control { width: 40px; height: 40px; } 
+		.carousel-control.right:hover, .carousel-control.left:hover { width: 45px; height: 45px; }
+		.carousel-control { margin-top: -20px; top: 50%; }
+		.say .container { height: auto; }
+		.say { padding: 30px 0; }
+		.haos_photo { padding: 40px 0 20px; }
+		
+		.span4.gap11 { float: none; overflow: hidden; width: 100%; }  
+		.span8, .span4 { width: 100%; float: none; overflow: hidden; } 
+		.pic { text-align: center; } 
+		.zoom { margin: -50px 0 0 -50px; left: 50%; top: 50%; } 
+		.zoom a { margin: -32px 0 0 -32px; padding: 0px; width: 64px; height: 64px; position: absolute; top: 0px; left: 50%; top: 50%; } 
+		.blogpost .post_detail { font-size: 9px; line-height: 15px; } 
+		.media, .media-body { overflow: visible; } 
+		.form-horizontal .controls { margin-left: 100px; } 
+		#contactform_main textarea { width: 250px; } 
+		.btn-grey, .btn-grey:hover, .btn-grey:active, .btn-grey:focus { position: relative; } 
+		.pic.pull-left { margin: 0px; float: none; } 
+		.pic.pull-right { margin: 0px; float: none; } 
+		.media .pic a { margin-bottom: 0px; }
+		.media .pic.pull-left { margin-right: 10px; float: left; } 
+		.span8.floatright { float: none; } 
+		.span6 { margin: 0 1%; width: 48%; } 
+		.span10 { width: 100%; }  
+		.span12 { width: 100%; } 
+	}	      
+ 
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+		.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container, .now_page, .now_page .container, .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container, .content_resize, .team .container, .say .container { width: 400px; }
+		#myCarousel .carousel-caption { margin-left: -200px; width: 400px; top: 50px; }
+		#myCarousel .carousel-caption h4 { font-size: 25px; line-height: 30px; }
+		#myCarousel .carousel-caption .caption-block { font-size: 14px; line-height: 20px; }
+		#myCarousel { height: 300px; }
+		#myCarousel img { height: 300px; }
+		#header { height: auto; }
+		.sliderwrap { width: 400px; }
+		
+		.now_page h4 { font-size: 15px; line-height: 20px; }
+		.now_page h1 { font-size: 11px; line-height: 17px; }
+		.button { margin-left: 0px; }
+		.button a { width: 189px; } 
+		.team_body img { width: 132px; height: 132px; }  
+		.gallery-categ li.VIDEO { list-style-image: none !important; }
+		.maps_view { height: 250px; }
+		#slider-wrapper object { height: 278px; }
+		
+		/* Typography */
+		#navbar .navbar-inner { padding-right: 0px; padding-left: 0px; }
+		.navbar .nav > li > a { padding: 13px 11px 10px; }
+		#forms .offset1 { margin-left: 0px; }
+		.form-horizontal .control-label { width: 70px; } 
+		.input-xlarge { width: 150px; }
+		.label, .badge { margin-bottom: 4px; } 
+		.navbar .brand2 { padding: 11px 8px 13px; }
+		.nav.pull-right li a { padding: 13px 5px 10px; }  
+		.form-horizontal .form-actions { padding-left: 105px; }  
+		#miscellaneous .span4 { overflow: visible; }
+		.pricing_six .pricing_column, .pricing_six .pricing_column_first { width: 15% !important; } 
+		
+	} 
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container, .now_page, .now_page .container, .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container, .content_resize, .team .container, .say .container { width: 300px; }
+		
+		#myCarousel .carousel-caption { margin-left: -150px; width: 300px; top: 50px; }
+		#myCarousel .carousel-caption h4 { padding-bottom: 0px; margin-bottom: 0px; font-size: 22px; line-height: 26px; }
+		#myCarousel .carousel-caption h4 br { display: none; }
+		#myCarousel .carousel-caption .caption-block { font-size: 12px; line-height: 15px; }
+		#myCarousel { height: 250px; }
+		#myCarousel img { height: 250px; }
+		#header { height: auto; }
+		
+		.now_page h4 { padding-top: 20px; font-size: 12px; line-height: 20px; }
+		.now_page h1 { font-size: 12px; line-height: 18px; }
+		.button { margin-left: 0px; }
+		.button a { padding-top: 12px; height: 30px; width: 139px; font-size: 15px; } 
+		.team_body img { width: 98px; height: 98px; }  
+		.carousel-control { left: 10px; }
+		.carousel-control.right { right: 10px; }
+		.team .container h1 { font-size: 16px; } 	
+		#footer input, textarea, .uneditable-input { width: 150px; } 
+		.col44 { width: 300px; }
+		.col44 .mask { width: 240px; }
+		.col44 .photo_text_body { width: 100%; }
+		.col44 .photo_text_body h1 { font-size: 13px; } 
+		.content_resize h1 { font-size: 18px; } 
+		.view_all { padding-top: 12px; height: 29px; }
+		.gallery-categ li.BRANDING { list-style-image: none !important; }
+		.form-horizontal .controls { margin-left: 80px; }
+		#contactform_main textarea { width: 210px; } 
+		input, textarea, .uneditable-input { width: 170px; } 
+		.maps_view { height: 170px; }
+		.sliderwrap { width: 300px; }
+		#slider-wrapper object { height: 170px; }
+
+		
+		/* Typography */
+		#navbar .navbar-inner { padding-right: 0px; padding-left: 0px; }
+		.navbar .nav > li > a { padding: 13px 11px 10px; }
+		#forms .offset1 { margin-left: 0px; }
+		.form-horizontal .control-label { width: 170px; float: none; text-align: left; } 
+		.form-horizontal.well .controls { margin-left: 0px; } 
+		.input-xlarge { width: 220px; }
+		.label, .badge { margin-bottom: 4px; } 
+		.navbar .brand2 { padding: 11px 4px 13px; }
+		.nav.pull-right li a { padding: 13px 5px 10px; }  
+		.form-horizontal .form-actions { padding-left: 0px; }  
+		#miscellaneous .span4 { overflow: visible; }
+		.span6 { width: 100%; float: none; margin: 0px; } 
+		.navbar .nav > li > .dropdown-menu:before { left: auto; right: 9px; }
+		.navbar .nav > li > .dropdown-menu:after { left: auto; right: 10px; }
+		.dropdown-menu { left: -67px; } 
+		#webstore .right { float: left !important; }    
+		.sliderwrap { padding-bottom: 10px; }
+	}   
+	
+	
