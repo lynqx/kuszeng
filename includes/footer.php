@@ -19,7 +19,7 @@
         <div class="span5">
 
 
-  <div class="copyright">&copy; Copyright www.kuszeng.com. <br> All Rights Reserved. Design by <a href="http://www.lynqx.com/" target="_blank" title="Dream Templates">lynqx</a>. </div>
+  <div class="copyright">&copy; <?php date('Y'); ?> www.kuszeng.com. <br> All Rights Reserved. Design by <a href="http://www.successpaddle.com/" target="_blank" title="">SiliconBear</a>. </div>
 
           
           <div class="clr"></div>
